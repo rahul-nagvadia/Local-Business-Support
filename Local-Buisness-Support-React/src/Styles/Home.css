@@ -1,0 +1,313 @@
+.video-container {
+  position: relative;
+  height: 100vh; /* Adjust to fit the viewport */
+  overflow: hidden;
+}
+
+.video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Add your custom styles */
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 4rem);
+}
+
+.title-wrapper {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  transform: skew(0, -10deg);
+}
+
+.top-title {
+  order: 1;
+  text-align: center;
+  display: block;
+  color: #e94aa1;
+  font-size: clamp(1rem, 4vw, 1.5rem);
+  margin-bottom: 1rem;
+  padding-right: 2rem;
+}
+
+.bottom-title {
+  order: 3;
+  text-align: center;
+  display: block;
+  color: #e94aa1;
+  font-size: clamp(1rem, 4vw, 1.5rem);
+  margin-top: 2rem;
+  padding-left: 2rem;
+}
+
+.sweet-title {
+  order: 2;
+  color: #fde9ff;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: clamp(3rem, 10vw, 6rem);
+  line-height: 0.75em;
+  text-align: center;
+  text-shadow: 3px 1px 1px #4af7ff, 2px 2px 1px #165bfb, 4px 2px 1px #4af7ff,
+    3px 3px 1px #165bfb, 5px 3px 1px #4af7ff, 4px 4px 1px #165bfb,
+    6px 4px 1px #4af7ff, 5px 5px 1px #165bfb, 7px 5px 1px #4af7ff,
+    6px 6px 1px #165bfb, 8px 6px 1px #4af7ff, 7px 7px 1px #165bfb,
+    9px 7px 1px #4af7ff;
+
+  span {
+    display: block;
+    position: relative;
+
+    &:before {
+      content: attr(data-text);
+      position: absolute;
+      text-shadow: 2px 2px 1px #e94aa1, -1px -1px 1px #c736f9,
+        -2px 2px 1px #e94aa1, 1px -1px 1px #f736f9;
+      z-index: 1;
+    }
+
+    &:nth-child(1) {
+      padding-right: 2.25rem;
+    }
+
+    &:nth-child(2) {
+      padding-left: 2.25rem;
+    }
+  }
+}
+
+.AddMember {
+  background-color: black; /* Black background */
+  display: flex; /* Use flexbox */
+  flex-direction: column; /* Arrange items vertically */
+  justify-content: center; /* Center items vertically */
+  align-items: center; /* Center items horizontally */
+  height: auto; /* Let the height adjust based on content */
+  font-family: "Jost", sans-serif;
+}
+
+.row {
+  color: white; /* Text color */
+  text-align: center; /* Center text */
+}
+.row2 {
+  color: white; /* Text color */
+  text-align: center;
+  margin-bottom: 100px; /* Center text */
+}
+.intext {
+  padding: 100px;
+  align-items: center;
+}
+.small-text {
+  font-size: 16px;
+}
+
+.big-text {
+  font-size: 48px;
+  margin-top: 0px;
+  margin-bottom: 50px; /* Big text size */
+}
+
+.gradient-button {
+  background-color: transparent; /* Transparent background */
+  color: white; /* Text color */
+  padding: 10px 20px;
+  font-size: 20px;
+  border: 2px solid transparent; /* Transparent border */
+  border-image: linear-gradient(
+    to right,
+    #ff9a9e,
+    #fecfef
+  ); /* Gradient border */
+  border-image-slice: 1; /* Ensure gradient covers entire border */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+  display: block;
+  margin: 0 auto;
+}
+
+.gradient-button:hover {
+  transform: scale(1.05); /* Button hover effect */
+  background: linear-gradient(to right, #ff9a9e, #fecfef);
+  color: black;
+}
+
+.AboutService {
+  padding: 50px;
+}
+
+.abtrow {
+  padding: 40px;
+  color: rgb(0, 0, 0); /* Text color */
+  text-align: center;
+  font-size: 70px; /* Center text */
+}
+@media screen and (max-width: 768px) {
+  .abtrow {
+    font-size: 40px; /* Decrease font size for smaller screens */
+  }
+}
+
+.showprovide {
+  display: flex;
+  flex-wrap: wrap; /* Allow cards to wrap to the next line */
+  justify-content: center;
+  padding: 46px; /* Center align cards */
+}
+
+.card {
+  width: 100%;
+  max-width: 300px; /* Adjust as needed */
+  margin-bottom: 20px; /* Add margin between cards */
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    flex: 0 1 calc(50% - 20px); /* Adjust card width for larger screens */
+    margin: 0 10px; /* Add margin between cards */
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .card {
+    flex: 0 1 calc(33.33% - 20px); /* Adjust card width for even larger screens */
+  }
+}
+
+.showprovide > * {
+  margin-right: 20px; /* Adjust as needed */
+}
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+.contactButton {
+  background: #3cb371;
+  color: white;
+  font-family: inherit;
+  padding: 0.5em;
+  padding-left: 1.2em;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 1em;
+  border: none;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  box-shadow: inset 0 0 1.8em -0.7em #2e8b57;
+  overflow: hidden;
+  position: relative;
+  height: 3em;
+  padding-right: 3.5em;
+}
+
+.iconButton {
+  margin-left: 1.2em;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.4em;
+  width: 2.4em;
+  border-radius: 1.2em;
+  box-shadow: 0.15em 0.15em 0.8em 0.3em #32cd32;
+  right: 0.4em;
+  transition: all 0.3s;
+}
+
+.contactButton:hover {
+  transform: translate(-0.05em, -0.05em);
+  box-shadow: 0.2em 0.2em #228b22;
+}
+
+.contactButton:active {
+  transform: translate(0.05em, 0.05em);
+  box-shadow: 0.1em 0.1em #228b22;
+}
+
+.with-image {
+  background-image: url("D:\Rahul College\Java Project\Local-Buisness-Support-React\local-buisness\src\Static\shop.jpg"); /* Add the path to your image */
+  background-size: cover;
+  background-position: center;
+  padding: 100px; /* Adjust padding as needed */
+  text-align: left;
+  display: flex;
+  justify-content: flex-start;
+}
+
+@media screen and (max-width: 768px) {
+  .with-image {
+    padding: 50px; /* Reduce padding for smaller screens */
+    justify-content: center; /* Center content on smaller screens */
+  }
+}
+
+
+.rowc {
+  color: #ffffff; /* Text color */
+  text-align: center; /* Center text */
+}
+.row2c {
+  color: #ffffff; /* Text color */
+  text-align: center;
+  margin-bottom: 100px; /* Center text */
+}
+.intextc {
+  padding: 100px;
+  align-items: center;
+  background: rgb(0, 0, 0);
+  border-radius: 100px;
+}
+.small-textc {
+  font-size: 16px;
+}
+
+.big-textc {
+  font-size: 48px;
+  margin-top: 0px;
+  margin-bottom: 50px; /* Big text size */
+}
+
+.gradientc-button {
+  background-color: transparent; /* Transparent background */
+  color: #7af0ec; /* Text color */
+  padding: 10px 20px;
+  font-size: 20px;
+  border: 2px solid transparent; /* Transparent border */
+  border-image: linear-gradient(
+    to right,
+    #ff9a9e,
+    #fecfef
+  ); /* Gradient border */
+  border-image-slice: 1; /* Ensure gradient covers entire border */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+  display: block;
+  margin: 0 auto;
+}
+
+.gradientc-button:hover {
+  transform: scale(1.05); /* Button hover effect */
+  background: linear-gradient(to right, #ff9a9e, #fecfef);
+  color: black;
+}
+
+

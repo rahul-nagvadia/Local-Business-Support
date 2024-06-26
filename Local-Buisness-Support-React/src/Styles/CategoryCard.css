@@ -1,0 +1,60 @@
+.card-category {
+    width: calc(var(--card-width) + 10px);
+    height: calc(var(--card-height) + 10px);
+    background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
+    border-radius: 20px;
+    transition: all .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px; /* Add margin for spacing between cards */
+}
+
+.card2-category {
+    --card-width: 90px; 
+    --card-height: 90px; 
+    width: var(--card-width);
+    height: var( --card-height);
+    background-color: #1a1a1a;
+    border-radius: 15px;
+    transition: all .2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px; /* Optional padding inside the card */
+}
+
+.card2-category:hover {
+    transform: scale(0.96);
+    border-radius: 20px;
+}
+
+.card-category:hover {
+    box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
+}
+
+.icon {
+    margin-bottom: 10px; /* Space between the icon and the name */
+}
+
+.name {
+    color: white; /* Ensure text color is visible */
+    font-size: 18px;
+    text-align: center;
+     /* Center the text */
+}
+
+@media screen and (max-width: 600px) {
+    .card-category {
+        width: calc(var(--mobilecard-width) + 10px);; 
+        height: calc(var(--mobilecard-width) + 10px);;
+    }
+    
+    .card2-category {
+        --mobilecard-width : 90%;
+        width: var(--mobilecard-width);
+        --mobilecard-height : auto;
+        height: var(--mobilecard-height); 
+    }
+}

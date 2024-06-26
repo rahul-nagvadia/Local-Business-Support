@@ -1,0 +1,42 @@
+/* ContactUs.css */
+
+.contact-us {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+  }
+  
+  .social-icons {
+    margin-bottom: 15px;
+  }
+  
+  .social-icon {
+    margin: 0 10px;
+    color: #555;
+    font-size: 18px;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .social-icon:hover {
+    color: #000;
+  }
+  
+  .copyright {
+    font-size: 14px;
+    color: #888;
+  }
+  
+  .heart {
+    color: red;
+  }
+  
+  .colorlib {
+    color: #888;
+    text-decoration: none;
+  }
+  
+  .colorlib:hover {
+    color: #000;
+  }
+  
